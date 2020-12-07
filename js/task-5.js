@@ -1,10 +1,10 @@
 const checkForSpam = function(message) {
-  const messageCheck = message.toLowerCase().split(' ');
-  for (let i = 0; i < messageCheck.length; i++) {
-    if (messageCheck[i].includes("spam") || messageCheck[i].includes("sale")) {
+  const messageCheck = message.toLowerCase();
+  
+    if (messageCheck.includes("spam") || messageCheck.includes("sale")) {
       return true;
     }
-  }
+  
   return false;
 };
 
